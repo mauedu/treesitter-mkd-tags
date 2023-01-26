@@ -29,6 +29,9 @@
   (hard_line_break)
 ] @string.escape
 
+; Added manually by mau
+(tag) @text.reference
+
 ; "(" not part of query because of
 ; https://github.com/nvim-treesitter/nvim-treesitter/issues/2206
 ; TODO: Find better fix for this

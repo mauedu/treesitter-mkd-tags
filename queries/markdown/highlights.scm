@@ -2,6 +2,9 @@
 (atx_heading (inline) @text.title)
 (setext_heading (paragraph) @text.title)
 
+; Added by mau according to:
+; https://github.com/MDeiml/tree-sitter-markdown/issues/37
+
 [
   (atx_h1_marker)
   (atx_h2_marker)
@@ -12,6 +15,15 @@
   (setext_h1_underline)
   (setext_h2_underline)
 ] @punctuation.special
+
+[
+  (atx_heading
+    (atx_h1_marker))
+  (atx_heading
+    (atx_h2_marker))
+  (setext_heading
+    (setext_h1_underline))
+] @text.title1
 
 [
   (link_title)

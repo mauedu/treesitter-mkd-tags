@@ -540,15 +540,27 @@ list.markdown = {
 
 list.markdown_inline = {
   install_info = {
-    url = "https://github.com/MDeiml/tree-sitter-markdown",
+    url = "https://github.com/mauedu/tree-sitter-markdown",
     location = "tree-sitter-markdown-inline",
     files = { "src/parser.c", "src/scanner.cc" },
-    branch = "split_parser",
+    branch = "merge_tags",
     readme_name = "markdown_inline (needs to be installed for full markdown highlighting)",
   },
   maintainers = { "@MDeiml" },
   experimental = true,
 }
+
+-- list.markdown_inline = {
+--   install_info = {
+--     url = "https://github.com/MDeiml/tree-sitter-markdown",
+--     location = "tree-sitter-markdown-inline",
+--     files = { "src/parser.c", "src/scanner.cc" },
+--     branch = "split_parser",
+--     readme_name = "markdown_inline (needs to be installed for full markdown highlighting)",
+--   },
+--   maintainers = { "@MDeiml" },
+--   experimental = true,
+-- }
 
 list.tlaplus = {
   install_info = {
